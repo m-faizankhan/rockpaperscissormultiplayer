@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Online Rock Paper Scissors</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="joinScreen">
+  <h2>Join Multiplayer Game</h2>
+  <input id="nameInput" placeholder="Enter Your Name" />
+  <input id="roomInput" placeholder="Enter Room Code" />
+  <button onclick="joinRoom()">Join Room</button>
+</div>
+
+<div id="gameScreen" class="hidden">
+  <h2 id="status">Waiting for opponent...</h2>
+  <h3 id="roundDisplay"></h3>
+
+  <div class="choices">
+    <button onclick="makeMove('rock')">Rock</button>
+    <button onclick="makeMove('paper')">Paper</button>
+    <button onclick="makeMove('scissor')">Scissor</button>
+  </div>
+
+  <h3 id="scoreDisplay"></h3>
+</div>
+
+<script type="module" src="script.js"></script>
+</body>
+</html>
